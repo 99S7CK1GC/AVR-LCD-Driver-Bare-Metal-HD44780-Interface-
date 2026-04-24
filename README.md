@@ -20,9 +20,10 @@ No Arduino libraries, no HAL — just direct register access.
 ## api
 
 ```c
-void lcd_init(void);                              // power-on init
-void lcd_command(unsigned char cmd);              // send raw instruction
-void lcd_print(unsigned char ch);                 // send one character
+void lcd_init(void);                                   // power-on init
+void lcd_command(unsigned char cmd);                   // send raw instruction
+void lcd_print_char(unsigned char ch);                 // send one character
+void lcd_print_string(const char *str);
 void lcd_set_cursor(unsigned char row, unsigned char col); // 0-indexed
 ```
 
