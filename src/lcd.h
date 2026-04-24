@@ -20,5 +20,5 @@
 void lcd_init(void);
 void lcd_command(unsigned char cmd);
 void lcd_print(unsigned char ch);
-void lcd_set_cursor(unsgined char row, unsigned char col);
-
+void lcd_print_string(const char *str);
+void lcd_set_cursor(unsigned char row, unsigned char col);
