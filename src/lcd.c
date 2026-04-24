@@ -41,6 +41,14 @@ void lcd_print(unsigned char ch)
   LCD_DATA_PORT = 0;
 }
 
+void lcd_print_string(const char *str)
+{
+  while (*str)
+  {
+    lcd_print(*str++);
+  }
+}
+
 void lcd_set_cursor(unsigned char row, unsigned char col)
 {
   unsigned char address;
