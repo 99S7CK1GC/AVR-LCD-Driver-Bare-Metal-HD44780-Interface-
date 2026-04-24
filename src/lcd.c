@@ -31,7 +31,7 @@ void lcd_command(unsigned char cmd)
   LCD_DATA_PORT = 0;
 }
 
-void lcd_print(unsigned char ch)
+void lcd_print_char(unsigned char ch)
 {
   wait_until_ready();
   LCD_DATA_PORT = ch;
